@@ -22,7 +22,7 @@ public class GunSteer : MonoBehaviour {
 		// Get Angle in Radians
 		float AngleRad = Mathf.Atan2(mousePosition.y - transform.position.y, mousePosition.x - transform.position.x);
 		// Get Angle in Degrees
-		float AngleDeg = (180 / Mathf.PI) * AngleRad;
+		float AngleDeg = (180 / Mathf.PI) * AngleRad + 90;
 		// Rotate Object
 		transform.rotation = Quaternion.Euler(0, 0, AngleDeg);
 
